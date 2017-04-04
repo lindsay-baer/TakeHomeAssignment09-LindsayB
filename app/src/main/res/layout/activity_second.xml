@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_second"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.android.takehomeassignment09_lindsayb.SecondActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:text="What's he lying about now?"
+    android:textSize="20dp"
+    android:gravity="center" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Description of Lie"
+    android:layout_margin="8dp"
+    android:id="@+id/lie_type" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="How Outrageous is the Lie? (1-10)"
+    android:layout_margin="8dp"
+    android:id="@+id/outrageous" />
+
+<CheckBox
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Does it have to do with Russia?"
+    android:id="@+id/russia"
+    android:layout_margin="8dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Another Lie"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="8dp"
+    android:onClick="anotherLie" />
+</LinearLayout>
